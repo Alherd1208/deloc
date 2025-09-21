@@ -2,6 +2,9 @@
 
 import { Upload, Users, Truck, CheckCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 
 const steps = [
     {
@@ -59,23 +62,27 @@ export default function HowItWorks() {
                                 viewport={{ once: true }}
                                 className="relative"
                             >
-                                <div className="bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                                    <div className="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                                        <Icon className="h-8 w-8 text-primary-600" />
-                                    </div>
-                                    <div className="bg-primary-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-4">
-                                        {index + 1}
-                                    </div>
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                        {step.title}
-                                    </h3>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        {step.description}
-                                    </p>
-                                </div>
+                                <Card className="text-center h-full hover:shadow-lg transition-all duration-300 hover:scale-105">
+                                    <CardHeader className="pb-4">
+                                        <div className="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                            <Icon className="h-8 w-8 text-primary-600" />
+                                        </div>
+                                        <Badge variant="default" className="w-8 h-8 rounded-full mx-auto mb-4 flex items-center justify-center text-sm font-bold">
+                                            {index + 1}
+                                        </Badge>
+                                        <CardTitle className="text-xl">
+                                            {step.title}
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <CardDescription className="text-base leading-relaxed">
+                                            {step.description}
+                                        </CardDescription>
+                                    </CardContent>
+                                </Card>
 
                                 {index < steps.length - 1 && (
-                                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                                         <div className="w-8 h-0.5 bg-gradient-to-r from-primary-300 to-primary-500"></div>
                                     </div>
                                 )}
@@ -91,11 +98,12 @@ export default function HowItWorks() {
                     viewport={{ once: true }}
                     className="text-center mt-12"
                 >
-                    <button className="btn-primary">
+                    <Button size="lg" className="px-8 py-4">
                         Start Your First Shipment
-                    </button>
+                    </Button>
                 </motion.div>
             </div>
         </section>
     )
 }
+

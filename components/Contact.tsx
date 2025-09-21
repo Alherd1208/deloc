@@ -2,6 +2,11 @@
 
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Label } from '@/components/ui/label'
 
 export default function Contact() {
     return (
@@ -38,12 +43,19 @@ export default function Contact() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2">
+                            <Button
+                                size="lg"
+                                className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 font-semibold gap-2"
+                            >
                                 Get Started Now <ArrowRight className="h-5 w-5" />
-                            </button>
-                            <button className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
+                            </Button>
+                            <Button
+                                variant="outline"
+                                size="lg"
+                                className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-6 py-3 font-semibold"
+                            >
                                 Schedule Demo
-                            </button>
+                            </Button>
                         </div>
                     </motion.div>
 
@@ -52,90 +64,82 @@ export default function Contact() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="bg-white rounded-2xl p-8 shadow-2xl"
                     >
-                        <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                            Get a Quote
-                        </h3>
-                        <form className="space-y-6">
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                                        Full Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                        placeholder="Your full name"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                                        Company
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                        placeholder="Company name"
-                                    />
-                                </div>
-                            </div>
+                        <Card className="shadow-2xl">
+                            <CardHeader>
+                                <CardTitle className="text-2xl">Get a Quote</CardTitle>
+                                <CardDescription>
+                                    Fill out the form below and we'll get back to you with a customized quote for your cargo transportation needs.
+                                </CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <form className="space-y-6">
+                                    <div className="grid md:grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <Label htmlFor="fullName">Full Name</Label>
+                                            <Input
+                                                id="fullName"
+                                                type="text"
+                                                placeholder="Your full name"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <Label htmlFor="company">Company</Label>
+                                            <Input
+                                                id="company"
+                                                type="text"
+                                                placeholder="Company name"
+                                            />
+                                        </div>
+                                    </div>
 
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                    placeholder="your@email.com"
-                                />
-                            </div>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="email">Email</Label>
+                                        <Input
+                                            id="email"
+                                            type="email"
+                                            placeholder="your@email.com"
+                                        />
+                                    </div>
 
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                                        From
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                        placeholder="Origin city"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                                        To
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                        placeholder="Destination city"
-                                    />
-                                </div>
-                            </div>
+                                    <div className="grid md:grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <Label htmlFor="from">From</Label>
+                                            <Input
+                                                id="from"
+                                                type="text"
+                                                placeholder="Origin city"
+                                            />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <Label htmlFor="to">To</Label>
+                                            <Input
+                                                id="to"
+                                                type="text"
+                                                placeholder="Destination city"
+                                            />
+                                        </div>
+                                    </div>
 
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">
-                                    Cargo Details
-                                </label>
-                                <textarea
-                                    rows={4}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                                    placeholder="Describe your cargo (weight, dimensions, special requirements...)"
-                                ></textarea>
-                            </div>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="cargoDetails">Cargo Details</Label>
+                                        <Textarea
+                                            id="cargoDetails"
+                                            rows={4}
+                                            placeholder="Describe your cargo (weight, dimensions, special requirements...)"
+                                        />
+                                    </div>
 
-                            <button
-                                type="submit"
-                                className="w-full bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
-                            >
-                                Get Quote
-                            </button>
-                        </form>
+                                    <Button type="submit" className="w-full" size="lg">
+                                        Get Quote
+                                    </Button>
+                                </form>
+                            </CardContent>
+                        </Card>
                     </motion.div>
                 </div>
             </div>
         </section>
     )
 }
+

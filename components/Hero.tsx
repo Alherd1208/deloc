@@ -4,6 +4,7 @@ import { ArrowRight, MapPin, Shield, Zap, Truck, Globe, TrendingUp } from 'lucid
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { getImagePath } from '../lib/utils'
+import { Button } from '@/components/ui/button'
 
 export default function Hero() {
     return (
@@ -61,20 +62,29 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                            <motion.button
+                            <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-2xl hover:shadow-primary-500/25 flex items-center justify-center gap-3"
                             >
-                                Get Started <ArrowRight className="h-5 w-5" />
-                            </motion.button>
-                            <motion.button
+                                <Button
+                                    size="lg"
+                                    className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl hover:shadow-primary-500/25 gap-3"
+                                >
+                                    Get Started <ArrowRight className="h-5 w-5" />
+                                </Button>
+                            </motion.div>
+                            <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
                             >
-                                Watch Demo
-                            </motion.button>
+                                <Button
+                                    variant="outline"
+                                    size="lg"
+                                    className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg"
+                                >
+                                    Watch Demo
+                                </Button>
+                            </motion.div>
                         </div>
 
                         <div className="grid grid-cols-3 gap-8">

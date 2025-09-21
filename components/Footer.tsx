@@ -1,6 +1,8 @@
 'use client'
 
 import { Truck, Mail, Phone, MapPin } from 'lucide-react'
+import { Separator } from '@/components/ui/separator'
+import { Button } from '@/components/ui/button'
 
 export default function Footer() {
     return (
@@ -63,15 +65,22 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 mt-12 pt-8">
+                <Separator className="mt-12 bg-gray-800" />
+                <div className="pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">
                             © 2024 Deloc. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Cookie Policy</a>
+                            <Button variant="link" className="text-gray-400 hover:text-white p-0 h-auto text-sm">
+                                Privacy Policy
+                            </Button>
+                            <Button variant="link" className="text-gray-400 hover:text-white p-0 h-auto text-sm">
+                                Terms of Service
+                            </Button>
+                            <Button variant="link" className="text-gray-400 hover:text-white p-0 h-auto text-sm">
+                                Cookie Policy
+                            </Button>
                         </div>
                     </div>
                 </div>
@@ -79,3 +88,4 @@ export default function Footer() {
         </footer>
     )
 }
+

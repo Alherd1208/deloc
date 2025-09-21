@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { Menu, X, Truck } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,29 +21,50 @@ export default function Header() {
                         <a href="#features" className="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
                         <a href="#how-it-works" className="text-gray-600 hover:text-primary-600 transition-colors">How it Works</a>
                         <a href="#about" className="text-gray-600 hover:text-primary-600 transition-colors">About</a>
-                        <a href="#contact" className="btn-primary">Get Started</a>
+                        <Button asChild>
+                            <a href="#contact">Get Started</a>
+                        </Button>
                     </nav>
 
-                    <button
-                        className="md:hidden"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                    </button>
+                    <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                        <SheetTrigger asChild>
+                            <Button variant="ghost" size="icon" className="md:hidden">
+                                <Menu className="h-6 w-6" />
+                                <span className="sr-only">Toggle menu</span>
+                            </Button>
+                        </SheetTrigger>
+                        <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                            <nav className="flex flex-col space-y-6 mt-6">
+                                <a
+                                    href="#features"
+                                    className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    Features
+                                </a>
+                                <a
+                                    href="#how-it-works"
+                                    className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    How it Works
+                                </a>
+                                <a
+                                    href="#about"
+                                    className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    About
+                                </a>
+                                <Button asChild className="w-full">
+                                    <a href="#contact" onClick={() => setIsMenuOpen(false)}>Get Started</a>
+                                </Button>
+                            </nav>
+                        </SheetContent>
+                    </Sheet>
                 </div>
-
-                {isMenuOpen && (
-                    <div className="md:hidden py-4 border-t">
-                        <nav className="flex flex-col space-y-4">
-                            <a href="#features" className="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
-                            <a href="#how-it-works" className="text-gray-600 hover:text-primary-600 transition-colors">How it Works</a>
-                            <a href="#about" className="text-gray-600 hover:text-primary-600 transition-colors">About</a>
-                            <a href="#contact" className="btn-primary inline-block text-center">Get Started</a>
-                        </nav>
-                    </div>
-                )}
             </div>
         </header>
     )
 }
+

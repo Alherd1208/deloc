@@ -2,6 +2,8 @@
 
 import { Satellite, Shield, Search, Clock, Globe, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 
 const features = [
     {
@@ -74,17 +76,28 @@ export default function Features() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-lg transition-shadow duration-300"
                             >
-                                <div className={`bg-${colorClass}-100 rounded-full p-3 w-12 h-12 mb-6 flex items-center justify-center`}>
-                                    <Icon className={`h-6 w-6 text-${colorClass}-600`} />
-                                </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    {feature.title}
-                                </h3>
-                                <p className="text-gray-600 leading-relaxed">
-                                    {feature.description}
-                                </p>
+                                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                                    <CardHeader>
+                                        <div className={`bg-${colorClass}-100 rounded-full p-3 w-12 h-12 mb-4 flex items-center justify-center`}>
+                                            <Icon className={`h-6 w-6 text-${colorClass}-600`} />
+                                        </div>
+                                        <CardTitle className="text-xl">
+                                            {feature.title}
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <CardDescription className="text-base leading-relaxed">
+                                            {feature.description}
+                                        </CardDescription>
+                                        <Badge
+                                            variant="secondary"
+                                            className={`mt-4 bg-${colorClass}-100 text-${colorClass}-700 hover:bg-${colorClass}-200`}
+                                        >
+                                            {feature.color === 'primary' ? 'Core Feature' : 'Advanced'}
+                                        </Badge>
+                                    </CardContent>
+                                </Card>
                             </motion.div>
                         )
                     })}
@@ -93,3 +106,4 @@ export default function Features() {
         </section>
     )
 }
+
