@@ -1,0 +1,22 @@
+---
+description:
+deloc-landing/
+├── app/
+│   ├── globals.css      # Tailwind styles & custom components
+│   ├── layout.tsx       # Root layout with SEO meta
+│   └── page.tsx         # Main landing page
+├── components/
+│   ├── Header.tsx       # Responsive navigation
+│   ├── Hero.tsx         # Compelling hero with animated dashboard
+│   ├── Features.tsx     # 6 key features (GNSS, blockchain, etc.)
+│   ├── HowItWorks.tsx   # 4-step process explanation
+│   ├── Contact.tsx      # Quote form & contact info
+│   └── Footer.tsx       # Company info & links
+├── package.json         # Dependencies & scripts
+├── tailwind.config.js   # Custom design system
+├── tsconfig.json        # TypeScript configuration
+├── next.config.js       # Next.js configuration
+└── README.md           # Documentation
+globs:
+alwaysApply: true
+---
