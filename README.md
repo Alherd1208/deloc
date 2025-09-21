@@ -98,3 +98,7 @@ This project is ready to deploy on platforms like:
 ## License
 
 MIT License - see LICENSE file for details.
+
+## GitHub Pages
+
+This project is configured for GitHub Pages deployment at: https://Alherd1208.github.io/deloc
