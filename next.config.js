@@ -13,6 +13,7 @@ const nextConfig = {
     },
     // Base path for GitHub Pages
     basePath: '/deloc',
+    assetPrefix: '/deloc',
 }
 
 module.exports = nextConfig

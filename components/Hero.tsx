@@ -3,6 +3,7 @@
 import { ArrowRight, MapPin, Shield, Zap, Truck, Globe, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { getImagePath } from '../lib/utils'
 
 export default function Hero() {
     return (
@@ -10,7 +11,7 @@ export default function Hero() {
             {/* Generated background pattern */}
             <div className="absolute inset-0 opacity-30">
                 <Image
-                    src="/images/hero-background-pattern.png"
+                    src={getImagePath("/images/hero-background-pattern.png")}
                     alt="Background pattern"
                     fill
                     className="object-cover"
@@ -107,7 +108,7 @@ export default function Hero() {
                         {/* Generated Dashboard Mockup */}
                         <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 p-4 shadow-2xl overflow-hidden">
                             <Image
-                                src="/images/hero-dashboard-mockup.png"
+                                src={getImagePath("/images/hero-dashboard-mockup.png")}
                                 alt="Deloc Dashboard Interface"
                                 width={600}
                                 height={400}
