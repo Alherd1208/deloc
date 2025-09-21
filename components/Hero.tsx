@@ -2,10 +2,22 @@
 
 import { ArrowRight, MapPin, Shield, Zap, Truck, Globe, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
     return (
         <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+            {/* Generated background pattern */}
+            <div className="absolute inset-0 opacity-30">
+                <Image
+                    src="/images/hero-background-pattern.png"
+                    alt="Background pattern"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+            </div>
+
             {/* Animated background elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -92,81 +104,21 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className="relative"
                     >
-                        {/* Main dashboard mockup */}
-                        <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 shadow-2xl">
-                            {/* Header */}
-                            <div className="bg-gradient-to-r from-primary-500/90 to-primary-600/90 backdrop-blur-sm rounded-2xl p-6 text-white mb-6 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-                                <div className="relative">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <h3 className="text-2xl font-bold">Live Dashboard</h3>
-                                        <div className="flex items-center gap-2">
-                                            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                                            <span className="text-sm opacity-90">Live</span>
-                                        </div>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-4 text-sm">
-                                        <div className="text-center">
-                                            <div className="text-3xl font-bold mb-1">1,247</div>
-                                            <div className="opacity-80 text-xs">Active Shipments</div>
-                                        </div>
-                                        <div className="text-center">
-                                            <div className="text-3xl font-bold mb-1">28</div>
-                                            <div className="opacity-80 text-xs">Countries</div>
-                                        </div>
-                                        <div className="text-center">
-                                            <div className="text-3xl font-bold mb-1">99.2%</div>
-                                            <div className="opacity-80 text-xs">Success Rate</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        {/* Generated Dashboard Mockup */}
+                        <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 p-4 shadow-2xl overflow-hidden">
+                            <Image
+                                src="/images/hero-dashboard-mockup.png"
+                                alt="Deloc Dashboard Interface"
+                                width={600}
+                                height={400}
+                                className="w-full h-auto rounded-2xl"
+                                priority
+                            />
 
-                            {/* Shipment tracking */}
-                            <div className="space-y-3 mb-6">
-                                {[
-                                    { route: 'Berlin → Warsaw', status: 'In Transit', color: 'green', progress: 75 },
-                                    { route: 'Istanbul → Almaty', status: 'Loading', color: 'blue', progress: 25 },
-                                    { route: 'Prague → Kiev', status: 'Delivered', color: 'green', progress: 100 }
-                                ].map((shipment, index) => (
-                                    <motion.div
-                                        key={shipment.route}
-                                        initial={{ opacity: 0, x: -20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                                        className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300"
-                                    >
-                                        <div className="flex items-center justify-between mb-2">
-                                            <div className="flex items-center gap-3">
-                                                <div className={`w-3 h-3 bg-${shipment.color}-500 rounded-full ${shipment.status === 'In Transit' ? 'animate-pulse' : ''}`}></div>
-                                                <span className="text-white font-medium">{shipment.route}</span>
-                                            </div>
-                                            <span className="text-xs text-gray-300 bg-white/10 px-2 py-1 rounded-full">
-                                                {shipment.status}
-                                            </span>
-                                        </div>
-                                        <div className="w-full bg-white/10 rounded-full h-1">
-                                            <div
-                                                className={`bg-gradient-to-r from-${shipment.color}-500 to-${shipment.color}-400 h-1 rounded-full transition-all duration-1000`}
-                                                style={{ width: `${shipment.progress}%` }}
-                                            ></div>
-                                        </div>
-                                    </motion.div>
-                                ))}
-                            </div>
-
-                            {/* Bottom stats */}
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="bg-gradient-to-br from-secondary-500/20 to-secondary-600/20 backdrop-blur-sm border border-secondary-400/30 rounded-xl p-4 text-center">
-                                    <TrendingUp className="h-6 w-6 text-secondary-400 mx-auto mb-2" />
-                                    <div className="text-lg font-bold text-white">+24%</div>
-                                    <div className="text-xs text-gray-300">This Month</div>
-                                </div>
-                                <div className="bg-gradient-to-br from-primary-500/20 to-primary-600/20 backdrop-blur-sm border border-primary-400/30 rounded-xl p-4 text-center">
-                                    <Truck className="h-6 w-6 text-primary-400 mx-auto mb-2" />
-                                    <div className="text-lg font-bold text-white">2.8k</div>
-                                    <div className="text-xs text-gray-300">Active Drivers</div>
-                                </div>
+                            {/* Live indicator overlay */}
+                            <div className="absolute top-8 right-8 flex items-center gap-2 bg-black/40 backdrop-blur-sm rounded-full px-3 py-2">
+                                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                                <span className="text-white text-sm font-medium">Live Dashboard</span>
                             </div>
                         </div>
 
