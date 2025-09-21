@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        appDir: true,
-    },
+    output: 'export',
+    trailingSlash: true,
     images: {
-        domains: ['images.unsplash.com'],
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+            },
+        ],
     },
+    // Base path for GitHub Pages
+    basePath: '/deloc',
 }
 
 module.exports = nextConfig
