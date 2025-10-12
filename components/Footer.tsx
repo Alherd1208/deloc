@@ -15,52 +15,52 @@ export default function Footer() {
                             <span className="text-2xl font-bold">Deloc</span>
                         </div>
                         <p className="text-gray-400 mb-4">
-                            Revolutionizing cargo transportation across Europe and Asia with
-                            AI-powered driver matching, GNSS tracking, and blockchain verification.
+                            Decentralized logistics marketplace where anyone can order transportation
+                            of any product from anywhere to anywhere. Powered by $DLOG coin.
                         </p>
                         <div className="space-y-2 text-sm text-gray-400">
                             <div className="flex items-center gap-2">
                                 <Mail className="h-4 w-4" />
-                                <span>contact@deloc.com</span>
+                                <span>alherd.havartsou@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="h-4 w-4" />
-                                <span>+1 (555) 123-4567</span>
+                                <span>+351913583824</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <MapPin className="h-4 w-4" />
-                                <span>Berlin, Germany</span>
+                                <span>Portugal, Lisbon</span>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Services</h3>
+                        <h3 className="text-lg font-semibold mb-4">Platform</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">Cargo Transport</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Driver Network</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">GNSS Tracking</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Blockchain Verification</a></li>
+                            <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+                            <li><a href="#play-to-earn" className="hover:text-white transition-colors">Play to Earn</a></li>
+                            <li><a href="#tokenomics" className="hover:text-white transition-colors">Tokenomics</a></li>
+                            <li><a href="#roadmap" className="hover:text-white transition-colors">Roadmap</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Coverage</h3>
+                        <h3 className="text-lg font-semibold mb-4">Regions</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">Western Europe</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Eastern Europe</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Georgia & Armenia</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Belarus & Russia</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">Central Asia</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Trade Corridors</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Azerbaijan & Turkmenistan</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Company</h3>
+                        <h3 className="text-lg font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Press</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Trackers Marketplace</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Whitepaper</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
+                            <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Satellite, Shield, Search, Clock, Globe, TrendingUp } from 'lucide-react'
+import { Satellite, Shield, Search, Thermometer, Compass, Gauge, Coins, Gamepad2, ShoppingCart, Star } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -8,38 +8,62 @@ import { Badge } from '@/components/ui/badge'
 const features = [
     {
         icon: Search,
-        title: 'Auto Driver Search',
-        description: 'AI-powered algorithm automatically finds the best drivers for your cargo based on route, capacity, and reliability scores.',
+        title: 'Automatic Match',
+        description: 'Automatic matching of orders with carriers for seamless logistics coordination.',
         color: 'primary'
-    },
-    {
-        icon: Satellite,
-        title: 'GNSS Tracking',
-        description: 'Real-time GPS/GLONASS tracking with precise location data, route optimization, and delivery time predictions.',
-        color: 'secondary'
     },
     {
         icon: Shield,
-        title: 'Blockchain Confirmation',
-        description: 'Immutable transaction records and smart contracts ensure transparency and trust in every delivery.',
-        color: 'primary'
-    },
-    {
-        icon: Globe,
-        title: 'Europe & Asia Coverage',
-        description: 'Extensive network spanning from Western Europe to Central Asia, covering major trade routes and corridors.',
+        title: 'Crypto Tracker',
+        description: 'Private key-based data publishing to blockchain ensuring 100% trust and transparency.',
         color: 'secondary'
     },
     {
-        icon: Clock,
-        title: 'Real-time Updates',
-        description: 'Instant notifications about pickup, transit milestones, delays, and successful deliveries.',
+        icon: Satellite,
+        title: 'A-GNSS Data',
+        description: 'Advanced GPS tracking providing real-time location data with high precision.',
         color: 'primary'
     },
     {
-        icon: TrendingUp,
-        title: 'Analytics Dashboard',
-        description: 'Comprehensive insights into shipping patterns, costs, driver performance, and route efficiency.',
+        icon: Thermometer,
+        title: 'Temperature Monitoring',
+        description: 'Built-in thermometer for temperature-sensitive cargo tracking and monitoring.',
+        color: 'secondary'
+    },
+    {
+        icon: Compass,
+        title: 'Gyroscope',
+        description: 'Orientation and movement tracking for secure cargo handling.',
+        color: 'primary'
+    },
+    {
+        icon: Gauge,
+        title: 'Barometer',
+        description: 'Atmospheric pressure monitoring for optimal cargo conditions.',
+        color: 'secondary'
+    },
+    {
+        icon: Coins,
+        title: '$DLOG Coin',
+        description: 'Native cryptocurrency for all platform transactions and rewards.',
+        color: 'primary'
+    },
+    {
+        icon: Gamepad2,
+        title: 'Play to Earn',
+        description: 'Tracker owners earn rewards through gamification and carrier earnings sharing.',
+        color: 'secondary'
+    },
+    {
+        icon: ShoppingCart,
+        title: 'Trackers Marketplace',
+        description: 'Buy, sell, and upgrade trackers to maximize your earnings.',
+        color: 'primary'
+    },
+    {
+        icon: Star,
+        title: 'Decentralized Ratings',
+        description: 'Transparent carrier and client rating system on the blockchain.',
         color: 'secondary'
     }
 ]
@@ -56,15 +80,15 @@ export default function Features() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Advanced Logistics Technology
+                        Main Features
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Cutting-edge features that revolutionize cargo transportation with transparency,
-                        efficiency, and security at the core of every shipment.
+                        Revolutionary logistics marketplace with crypto-powered tracking,
+                        play-to-earn mechanics, and complete decentralization.
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {features.map((feature, index) => {
                         const Icon = feature.icon
                         const colorClass = feature.color === 'primary' ? 'primary' : 'secondary'

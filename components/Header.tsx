@@ -19,8 +19,9 @@ export default function Header() {
 
                     <nav className="hidden md:flex items-center space-x-8">
                         <a href="#features" className="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
-                        <a href="#how-it-works" className="text-gray-600 hover:text-primary-600 transition-colors">How it Works</a>
-                        <a href="#about" className="text-gray-600 hover:text-primary-600 transition-colors">About</a>
+                        <a href="#play-to-earn" className="text-gray-600 hover:text-primary-600 transition-colors">Play to Earn</a>
+                        <a href="#tokenomics" className="text-gray-600 hover:text-primary-600 transition-colors">Tokenomics</a>
+                        <a href="#roadmap" className="text-gray-600 hover:text-primary-600 transition-colors">Roadmap</a>
                         <Button asChild>
                             <a href="#contact">Get Started</a>
                         </Button>
@@ -43,18 +44,25 @@ export default function Header() {
                                     Features
                                 </a>
                                 <a
-                                    href="#how-it-works"
+                                    href="#play-to-earn"
                                     className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    How it Works
+                                    Play to Earn
                                 </a>
                                 <a
-                                    href="#about"
+                                    href="#tokenomics"
                                     className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    About
+                                    Tokenomics
+                                </a>
+                                <a
+                                    href="#roadmap"
+                                    className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    Roadmap
                                 </a>
                                 <Button asChild className="w-full">
                                     <a href="#contact" onClick={() => setIsMenuOpen(false)}>Get Started</a>

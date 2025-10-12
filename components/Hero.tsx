@@ -45,20 +45,20 @@ export default function Hero() {
                             className="inline-flex items-center px-4 py-2 bg-primary-500/20 backdrop-blur-sm rounded-full border border-primary-400/30 mb-6"
                         >
                             <Globe className="h-4 w-4 mr-2 text-primary-300" />
-                            <span className="text-sm font-medium text-primary-100">Europe & Asia Connected</span>
+                            <span className="text-sm font-medium text-primary-100">Decentralized Logistics Marketplace</span>
                         </motion.div>
 
                         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                            <span className="text-white">Smart Cargo</span>
+                            <span className="text-white">Transport Anything</span>
                             <br />
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-                                Transportation
+                                From Anywhere
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-                            Revolutionary logistics platform with AI-powered driver matching, real-time GNSS tracking,
-                            and blockchain-verified deliveries. Transform your cargo operations today.
+                            Anyone can order transportation of any product from anywhere to anywhere.
+                            Powered by crypto trackers, $DLOG coin, and blockchain verification.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -89,9 +89,9 @@ export default function Hero() {
 
                         <div className="grid grid-cols-3 gap-8">
                             {[
-                                { icon: MapPin, label: 'Real-time Tracking', color: 'primary' },
-                                { icon: Shield, label: 'Blockchain Verified', color: 'secondary' },
-                                { icon: Zap, label: 'Auto Driver Match', color: 'primary' }
+                                { icon: MapPin, label: 'Crypto Trackers', color: 'primary' },
+                                { icon: Shield, label: '$DLOG Coin', color: 'secondary' },
+                                { icon: Zap, label: 'Auto Match', color: 'primary' }
                             ].map((item, index) => (
                                 <motion.div
                                     key={item.label}
