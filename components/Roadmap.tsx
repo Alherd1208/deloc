@@ -44,7 +44,7 @@ const roadmapItems = [
     {
         title: 'Public Investments',
         description: 'Open platform to public funding and community participation',
-        status: 'future'
+        status: 'upcoming'
     },
     {
         title: '$DLOG Coin Launch',
