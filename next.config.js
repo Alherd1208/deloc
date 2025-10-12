@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export',
+    trailingSlash: true,
     images: {
         unoptimized: true,
         remotePatterns: [
@@ -9,6 +11,9 @@ const nextConfig = {
             },
         ],
     },
+    // Base path for GitHub Pages
+    basePath: '/deloc',
+    assetPrefix: '/deloc',
 }
 
 module.exports = nextConfig
