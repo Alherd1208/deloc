@@ -19,7 +19,7 @@ export default function Header() {
 
                     <nav className="hidden md:flex items-center space-x-8">
                         <a href="#features" className="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
-                        <a href="#play-to-earn" className="text-gray-600 hover:text-primary-600 transition-colors">Play to Earn</a>
+                        <a href="#play-to-earn" className="text-gray-600 hover:text-primary-600 transition-colors">DePin app</a>
                         <a href="#tokenomics" className="text-gray-600 hover:text-primary-600 transition-colors">Tokenomics</a>
                         <a href="#roadmap" className="text-gray-600 hover:text-primary-600 transition-colors">Roadmap</a>
                         <Button asChild>
@@ -48,7 +48,7 @@ export default function Header() {
                                     className="text-lg text-gray-600 hover:text-primary-600 transition-colors"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    Play to Earn
+                                    DePin app
                                 </a>
                                 <a
                                     href="#tokenomics"

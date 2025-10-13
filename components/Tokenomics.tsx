@@ -34,8 +34,8 @@ const tokenomicsData = [
         totalSupply: '15,000,000,000',
         percent: '30.00%',
         price: '$0.00016',
-        valuation: '$10,000,000',
-        collected: '$3,000,000',
+        valuation: '$2,400,000',
+        collected: '$100,000',
         tgeUnlock: '20%',
         cliff: '1 day',
         vesting: '91 days'
@@ -45,7 +45,7 @@ const tokenomicsData = [
         totalSupply: '3,500,000,000',
         percent: '7.00%',
         price: '$0.00016',
-        valuation: '$10,000,000',
+        valuation: '$560,000',
         collected: '$0',
         tgeUnlock: '100%',
         cliff: '0 days',
@@ -56,7 +56,7 @@ const tokenomicsData = [
         totalSupply: '4,000,000,000',
         percent: '8.00%',
         price: '$0.00016',
-        valuation: '$10,000,000',
+        valuation: '$640,000',
         collected: '$0',
         tgeUnlock: '5%',
         cliff: '30 days',
@@ -67,7 +67,7 @@ const tokenomicsData = [
         totalSupply: '10,000,000,000',
         percent: '20.00%',
         price: '$0.00016',
-        valuation: '$10,000,000',
+        valuation: '$1,600,000',
         collected: '$0',
         tgeUnlock: '20%',
         cliff: '182 days',
@@ -97,7 +97,7 @@ const keyStats = [
     {
         icon: Calendar,
         label: 'Collected USDT',
-        value: '$4,200,000',
+        value: '$1,300,000',
         color: 'secondary'
     }
 ]
