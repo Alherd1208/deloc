@@ -57,8 +57,8 @@ const roadmapItems = [
         status: 'future'
     },
     {
-        title: 'Play to Earn Game',
-        description: 'Play to earn game for tracker owners Android/iOS app',
+        title: 'DePin App Game',
+        description: 'DePin app for tracker owners Android/iOS app',
         status: 'future'
     },
     {

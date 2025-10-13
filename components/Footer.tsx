@@ -38,7 +38,7 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Platform</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                            <li><a href="#play-to-earn" className="hover:text-white transition-colors">Play to Earn</a></li>
+                            <li><a href="#play-to-earn" className="hover:text-white transition-colors">DePin App</a></li>
                             <li><a href="#tokenomics" className="hover:text-white transition-colors">Tokenomics</a></li>
                             <li><a href="#roadmap" className="hover:text-white transition-colors">Roadmap</a></li>
                         </ul>

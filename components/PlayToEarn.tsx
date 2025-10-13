@@ -42,7 +42,7 @@ export default function PlayToEarn() {
                 >
                     <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
                         <Gamepad2 className="h-4 w-4 mr-2" />
-                        <span className="text-sm font-medium">Play to Earn</span>
+                        <span className="text-sm font-medium">DePin Ecosystem</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         DePin App for Tracker Owners
