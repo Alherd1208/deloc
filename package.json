@@ -1,7 +1,7 @@
 {
-    "name": "deloc-landing",
+    "name": "delog-landing",
     "version": "1.0.0",
-    "description": "Landing page for Deloc - Auto driver search for cargo transfer with GNSS tracking and blockchain confirmation",
+    "description": "Landing page for Delog - Auto driver search for cargo transfer with GNSS tracking and blockchain confirmation",
     "main": "index.js",
     "scripts": {
         "dev": "next dev",
@@ -59,6 +59,6 @@
         "europe",
         "asia"
     ],
-    "author": "Deloc Team",
+    "author": "Delog Team",
     "license": "MIT"
 }

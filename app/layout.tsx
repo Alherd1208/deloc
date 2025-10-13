@@ -5,10 +5,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'Deloc - Decentralized Logistics Marketplace',
+    title: 'Delog - Decentralized Logistics Marketplace',
     description: 'Anyone can order transportation of any product from anywhere to anywhere. Powered by crypto trackers, $DLOG coin, and blockchain verification.',
     keywords: 'logistics marketplace, crypto trackers, DLOG coin, play to earn, blockchain, transportation',
-    authors: [{ name: 'Deloc Team' }],
+    authors: [{ name: 'Delog Team' }],
 }
 
 export default function RootLayout({

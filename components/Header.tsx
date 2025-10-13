@@ -14,7 +14,7 @@ export default function Header() {
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center space-x-2">
                         <Truck className="h-8 w-8 text-primary-600" />
-                        <span className="text-2xl font-bold text-gray-900">Deloc</span>
+                        <span className="text-2xl font-bold text-gray-900">Delog</span>
                     </div>
 
                     <nav className="hidden md:flex items-center space-x-8">

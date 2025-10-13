@@ -1,6 +1,6 @@
-# Deloc Landing Page
+# Delog Landing Page
 
-A modern, responsive landing page for Deloc - a smart cargo transportation platform that connects drivers across Europe and Asia using GNSS tracking and blockchain confirmation.
+A modern, responsive landing page for Delog - a smart cargo transportation platform that connects drivers across Europe and Asia using GNSS tracking and blockchain confirmation.
 
 ## Features
 
@@ -58,7 +58,7 @@ npm start
 ## Project Structure
 
 ```
-deloc-landing/
+delog-landing/
 ├── app/
 │   ├── globals.css      # Global styles
 │   ├── layout.tsx       # Root layout
@@ -101,4 +101,4 @@ MIT License - see LICENSE file for details.
 
 ## GitHub Pages
 
-This project is configured for GitHub Pages deployment at: https://Alherd1208.github.io/deloc
+This project is configured for GitHub Pages deployment at: https://Alherd1208.github.io/delog

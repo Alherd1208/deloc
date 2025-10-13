@@ -13,8 +13,8 @@ const nextConfig = {
         ],
     },
     // Commented out for development - uncomment for GitHub Pages
-    // basePath: '/deloc',
-    // assetPrefix: '/deloc',
+    // basePath: '/delog',
+    // assetPrefix: '/delog',
 }
 
 module.exports = nextConfig

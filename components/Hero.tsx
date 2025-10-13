@@ -119,7 +119,7 @@ export default function Hero() {
                         <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 p-4 shadow-2xl overflow-hidden">
                             <Image
                                 src={getImagePath("/images/hero-dashboard-mockup.png")}
-                                alt="Deloc Dashboard Interface"
+                                alt="Delog Dashboard Interface"
                                 width={600}
                                 height={400}
                                 className="w-full h-auto rounded-2xl"

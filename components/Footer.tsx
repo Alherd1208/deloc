@@ -12,7 +12,7 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center space-x-2 mb-4">
                             <Truck className="h-8 w-8 text-primary-400" />
-                            <span className="text-2xl font-bold">Deloc</span>
+                            <span className="text-2xl font-bold">Delog</span>
                         </div>
                         <p className="text-gray-400 mb-4">
                             Decentralized logistics marketplace where anyone can order transportation
@@ -69,7 +69,7 @@ export default function Footer() {
                 <div className="pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">
-                            © 2024 Deloc. All rights reserved.
+                            © 2024 Delog. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
                             <Button variant="link" className="text-gray-400 hover:text-white p-0 h-auto text-sm">
