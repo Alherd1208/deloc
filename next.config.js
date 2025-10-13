@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Commented out for development - uncomment for production export
-    // output: 'export',
-    // trailingSlash: true,
+    output: 'export',
+    trailingSlash: true,
     images: {
-        // unoptimized: true,
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: 'https',
@@ -12,9 +11,8 @@ const nextConfig = {
             },
         ],
     },
-    // Commented out for development - uncomment for GitHub Pages
-    // basePath: '/delog',
-    // assetPrefix: '/delog',
+    basePath: '/deloc',
+    assetPrefix: '/deloc/',
 }
 
 module.exports = nextConfig
