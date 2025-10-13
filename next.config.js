@@ -11,8 +11,7 @@ const nextConfig = {
             },
         ],
     },
-    basePath: '/deloc',
-    assetPrefix: '/deloc/',
+    // Removed basePath and assetPrefix for custom domain delog.online
 }
 
 module.exports = nextConfig
