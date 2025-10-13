@@ -20,11 +20,11 @@ export default function Contact() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Ready to Transform Your Logistics?
+                            Ready to Join the Logistics Marketplace?
                         </h2>
                         <p className="text-xl text-primary-100 mb-8 leading-relaxed">
-                            Join thousands of businesses already using Deloc for secure,
-                            transparent, and efficient cargo transportation across Europe and Asia.
+                            Join the decentralized logistics marketplace where anyone can order transportation of any product from anywhere to anywhere.
+                            Powered by crypto trackers, $DLOG coin, and automatic carrier matching.
                         </p>
 
                         <div className="space-y-4 mb-8">
@@ -69,7 +69,7 @@ export default function Contact() {
                             <CardHeader>
                                 <CardTitle className="text-2xl">Get a Quote</CardTitle>
                                 <CardDescription>
-                                    Fill out the form below and we'll get back to you with a customized quote for your cargo transportation needs.
+                                    Fill out the form below and we'll get back to you with information about our logistics marketplace and crypto tracking services.
                                 </CardDescription>
                             </CardHeader>
                             <CardContent>

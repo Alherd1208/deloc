@@ -49,16 +49,16 @@ export default function Hero() {
                         </motion.div>
 
                         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                            <span className="text-white">Transport Anything</span>
+                            <span className="text-white">Logistics Marketplace</span>
                             <br />
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-                                From Anywhere
+                                Transport Anything
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
                             Anyone can order transportation of any product from anywhere to anywhere.
-                            Powered by crypto trackers, $DLOG coin, and blockchain verification.
+                            Powered by crypto trackers with 100% blockchain trust, $DLOG coin, and automatic carrier matching.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -89,9 +89,9 @@ export default function Hero() {
 
                         <div className="grid grid-cols-3 gap-8">
                             {[
-                                { icon: MapPin, label: 'Crypto Trackers', color: 'primary' },
-                                { icon: Shield, label: '$DLOG Coin', color: 'secondary' },
-                                { icon: Zap, label: 'Auto Match', color: 'primary' }
+                                { icon: MapPin, label: 'A-GNSS Tracking', color: 'primary' },
+                                { icon: Shield, label: 'Blockchain Trust', color: 'secondary' },
+                                { icon: Zap, label: 'Auto Matching', color: 'primary' }
                             ].map((item, index) => (
                                 <motion.div
                                     key={item.label}

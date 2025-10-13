@@ -117,7 +117,7 @@ export default function Tokenomics() {
                         $DLOG Tokenomics
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive token distribution and vesting schedule for the $DLOG ecosystem
+                        $DLOG coin for all transactions in the logistics marketplace with comprehensive token distribution and vesting schedule
                     </p>
                 </motion.div>
 
@@ -203,6 +203,27 @@ export default function Tokenomics() {
                                     </TableBody>
                                 </Table>
                             </div>
+                        </CardContent>
+                    </Card>
+                </motion.div>
+
+                {/* Buyback Policy */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    viewport={{ once: true }}
+                    className="mt-12"
+                >
+                    <Card className="bg-primary-50 border-primary-200">
+                        <CardHeader>
+                            <CardTitle className="text-2xl text-center">Buyback Policy</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-center text-gray-700">
+                                50% of company income will be used to buy back $DLOG from the
+                                open market to support price appreciation alongside platform growth.
+                            </p>
                         </CardContent>
                     </Card>
                 </motion.div>

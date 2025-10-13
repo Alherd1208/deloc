@@ -1,6 +1,6 @@
 'use client'
 
-import { Satellite, Shield, Search, Thermometer, Compass, Gauge, Coins, Gamepad2, ShoppingCart, Star } from 'lucide-react'
+import { Satellite, Shield, Search, Thermometer, Compass, Gauge, Coins, Gamepad2, ShoppingCart, Star, Globe } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -9,25 +9,25 @@ const features = [
     {
         icon: Search,
         title: 'Automatic Match',
-        description: 'Automatic matching of orders with carriers for seamless logistics coordination.',
+        description: 'Automatic matching of orders and carriers for seamless logistics coordination.',
         color: 'primary'
     },
     {
         icon: Shield,
         title: 'Crypto Tracker',
-        description: 'Private key-based data publishing to blockchain ensuring 100% trust and transparency.',
+        description: 'Crypto tracker with private key to publish data to blockchain with 100% trust.',
         color: 'secondary'
     },
     {
         icon: Satellite,
         title: 'A-GNSS Data',
-        description: 'Advanced GPS tracking providing real-time location data with high precision.',
+        description: 'GPS, Glonass, Galileo, BeiDou data + GSM towers locations for precise tracking.',
         color: 'primary'
     },
     {
         icon: Thermometer,
-        title: 'Temperature Monitoring',
-        description: 'Built-in thermometer for temperature-sensitive cargo tracking and monitoring.',
+        title: 'Thermometer',
+        description: 'Built-in temperature monitoring for temperature-sensitive cargo.',
         color: 'secondary'
     },
     {
@@ -45,26 +45,32 @@ const features = [
     {
         icon: Coins,
         title: '$DLOG Coin',
-        description: 'Native cryptocurrency for all platform transactions and rewards.',
+        description: '$DLOG coin for all transactions within the logistics marketplace.',
         color: 'primary'
     },
     {
         icon: Gamepad2,
-        title: 'Play to Earn',
-        description: 'Tracker owners earn rewards through gamification and carrier earnings sharing.',
+        title: 'DePin App',
+        description: 'DePin app for tracker owners with trackers marketplace.',
         color: 'secondary'
     },
     {
         icon: ShoppingCart,
         title: 'Trackers Marketplace',
-        description: 'Buy, sell, and upgrade trackers to maximize your earnings.',
+        description: 'Trade your trackers and upgrade them to earn more.',
         color: 'primary'
     },
     {
         icon: Star,
         title: 'Decentralized Ratings',
-        description: 'Transparent carrier and client rating system on the blockchain.',
+        description: 'Decentralized carrier/client ratings system.',
         color: 'secondary'
+    },
+    {
+        icon: Globe,
+        title: 'Connectivity',
+        description: 'Satellite Internet + 2G, 4G connectivity for global coverage.',
+        color: 'primary'
     }
 ]
 

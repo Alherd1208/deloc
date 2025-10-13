@@ -8,18 +8,18 @@ import { Button } from '@/components/ui/button'
 const features = [
     {
         icon: TrendingUp,
-        title: 'Earn Passive Income',
-        description: 'As a tracker owner, you automatically earn a percentage of the carrier\'s earnings from each delivery.'
+        title: 'Earn from Carriers',
+        description: 'As an owner of the tracker you will earn some % of the carrier earnings'
     },
     {
         icon: RefreshCw,
         title: 'Trade Your Trackers',
-        description: 'Buy and sell trackers on the marketplace. Build your tracker portfolio and maximize profits.'
+        description: 'You can trade your trackers and upgrade them to earn more'
     },
     {
         icon: Award,
-        title: 'Upgrade System',
-        description: 'Upgrade your trackers to unlock higher earning rates and exclusive rewards.'
+        title: 'Trackers Marketplace',
+        description: 'DePin app for tracker owners with trackers marketplace integration'
     }
 ]
 
@@ -45,10 +45,10 @@ export default function PlayToEarn() {
                         <span className="text-sm font-medium">Play to Earn</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Own Trackers, Earn Rewards
+                        DePin App for Tracker Owners
                     </h2>
                     <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                        Join the revolution as a tracker owner and earn passive income while supporting the logistics network
+                        Join the revolution as a tracker owner and earn passive income through the DePin app with trackers marketplace
                     </p>
                 </motion.div>
 
@@ -92,17 +92,16 @@ export default function PlayToEarn() {
                     className="text-center"
                 >
                     <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-3xl mx-auto">
-                        <h3 className="text-2xl font-bold mb-4">How It Works</h3>
+                        <h3 className="text-2xl font-bold mb-4">How DePin App Works</h3>
                         <p className="text-gray-200 text-lg mb-6 leading-relaxed">
-                            Purchase crypto trackers and assign them to carriers. Each time a carrier completes a delivery using your tracker,
-                            you earn a percentage of their earnings. Trade trackers on the marketplace to build a profitable portfolio,
-                            or upgrade them to increase your earning potential. The more trackers you own, the more you earn!
+                            As an owner of the tracker you will earn some % of the carrier earnings. You can trade your trackers and upgrade them to earn more.
+                            The DePin app provides a complete marketplace for tracker owners to maximize their earning potential through the logistics network.
                         </p>
                         <Button
                             size="lg"
                             className="bg-white text-primary-900 hover:bg-gray-100 px-8 py-4 font-semibold"
                         >
-                            Learn More About Trackers
+                            Learn More About DePin App
                         </Button>
                     </div>
                 </motion.div>

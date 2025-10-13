@@ -13,67 +13,67 @@ const roadmapItems = [
     },
     {
         title: 'Trackers MVP Development',
-        description: 'Build minimum viable product for crypto trackers with core sensors',
+        description: 'Trackers MVP development with core sensor integration',
         status: 'in-progress'
     },
     {
         title: 'Seed Investments',
-        description: 'Secure initial funding for platform development and growth',
+        description: 'Seed investments for initial platform development',
         status: 'in-progress'
     },
     {
         title: 'Trackers First Release',
-        description: 'Launch first version of crypto trackers to market',
+        description: 'Trackers first version release to market',
         status: 'upcoming'
     },
     {
         title: 'Telegram Bot Launch',
-        description: 'Automatic match app in Telegram for easy order-carrier matching',
+        description: 'Automatic match app in Telegram launch',
         status: 'upcoming'
     },
     {
         title: 'Private Investments',
-        description: 'Raise capital from strategic investors for scaling operations',
+        description: 'Private investments for scaling operations',
         status: 'upcoming'
     },
     {
-        title: 'Play to Earn Game',
-        description: 'Launch play-to-earn game for tracker owners in Telegram',
+        title: 'DePin App Launch',
+        description: 'DePin app for tracker owners with trackers marketplace',
         status: 'upcoming'
     },
     {
         title: 'Public Investments',
-        description: 'Open platform to public funding and community participation',
+        description: 'Public investments for community expansion',
         status: 'upcoming'
     },
     {
         title: '$DLOG Coin Launch',
-        description: 'Release native cryptocurrency for all platform transactions',
-        status: 'future'
-    },
-    {
-        title: 'Trackers Marketplace',
-        description: 'Launch marketplace for buying, selling, and upgrading trackers',
+        description: '$DLOG coin launch for all transactions',
         status: 'future'
     },
     {
         title: 'Mobile Apps Launch',
-        description: 'Release automatic match Android/iOS app and play-to-earn mobile game',
+        description: 'Automatic match Android/iOS app launch',
+        status: 'future'
+    },
+    {
+        title: 'Play to Earn Game',
+        description: 'Play to earn game for tracker owners Android/iOS app',
         status: 'future'
     },
     {
         title: 'Cargo Type Expansion',
-        description: 'Expand beyond cars to premium food products and postal services',
+        description: 'Expand the types of cargo to transfer not only cars but also premium food products and post',
         status: 'future'
     },
     {
         title: 'Territory Expansion',
-        description: 'Expand service coverage to additional regions and countries',
+        description: 'Expand the territory of transfers to additional regions',
         status: 'future'
     },
     {
         title: 'To be continued...',
-        description: 'More exciting features and expansions coming soon',
+        description: 'To be continued with more exciting developments',
         status: 'future'
     }
 ]
