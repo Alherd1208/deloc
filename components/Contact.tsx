@@ -12,37 +12,52 @@ export default function Contact() {
     return (
         <section id="contact" className="section-padding bg-gradient-to-br from-primary-600 to-primary-800">
             <div className="container-custom">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="max-w-4xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                             Ready to Join the Logistics Marketplace?
                         </h2>
-                        <p className="text-xl text-primary-100 mb-8 leading-relaxed">
+                        <p className="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
                             Join the decentralized logistics marketplace where anyone can order transportation of any product from anywhere to anywhere.
                             Powered by crypto trackers, $DLOG coin, and automatic carrier matching.
                         </p>
 
-                        <div className="space-y-4 mb-8">
-                            <div className="flex items-center gap-4 text-primary-100">
-                                <Mail className="h-5 w-5" />
-                                <span>contact@delog.com</span>
+                        <div className="grid md:grid-cols-3 gap-8 mb-8">
+                            <div className="flex flex-col items-center gap-4 text-primary-100">
+                                <div className="bg-primary-500/20 rounded-full p-4">
+                                    <Mail className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold">Email</p>
+                                    <p>alherd.havartsou@gmail.com</p>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4 text-primary-100">
-                                <Phone className="h-5 w-5" />
-                                <span>+1 (555) 123-4567</span>
+                            <div className="flex flex-col items-center gap-4 text-primary-100">
+                                <div className="bg-primary-500/20 rounded-full p-4">
+                                    <Phone className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold">Phone</p>
+                                    <p>+351913583824</p>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4 text-primary-100">
-                                <MapPin className="h-5 w-5" />
-                                <span>Berlin, Germany</span>
+                            <div className="flex flex-col items-center gap-4 text-primary-100">
+                                <div className="bg-primary-500/20 rounded-full p-4">
+                                    <MapPin className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <p className="font-semibold">Location</p>
+                                    <p>Lisbon, Portugal</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button
                                 size="lg"
                                 className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 font-semibold gap-2"
@@ -52,90 +67,11 @@ export default function Contact() {
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-6 py-3 font-semibold"
+                                className="border-2 border-white text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-primary-600 px-6 py-3 font-semibold"
                             >
                                 Schedule Demo
                             </Button>
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        viewport={{ once: true }}
-                    >
-                        <Card className="shadow-2xl">
-                            <CardHeader>
-                                <CardTitle className="text-2xl">Get a Quote</CardTitle>
-                                <CardDescription>
-                                    Fill out the form below and we'll get back to you with information about our logistics marketplace and crypto tracking services.
-                                </CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <form className="space-y-6">
-                                    <div className="grid md:grid-cols-2 gap-4">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="fullName">Full Name</Label>
-                                            <Input
-                                                id="fullName"
-                                                type="text"
-                                                placeholder="Your full name"
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="company">Company</Label>
-                                            <Input
-                                                id="company"
-                                                type="text"
-                                                placeholder="Company name"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <Label htmlFor="email">Email</Label>
-                                        <Input
-                                            id="email"
-                                            type="email"
-                                            placeholder="your@email.com"
-                                        />
-                                    </div>
-
-                                    <div className="grid md:grid-cols-2 gap-4">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="from">From</Label>
-                                            <Input
-                                                id="from"
-                                                type="text"
-                                                placeholder="Origin city"
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="to">To</Label>
-                                            <Input
-                                                id="to"
-                                                type="text"
-                                                placeholder="Destination city"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="space-y-2">
-                                        <Label htmlFor="cargoDetails">Cargo Details</Label>
-                                        <Textarea
-                                            id="cargoDetails"
-                                            rows={4}
-                                            placeholder="Describe your cargo (weight, dimensions, special requirements...)"
-                                        />
-                                    </div>
-
-                                    <Button type="submit" className="w-full" size="lg">
-                                        Get Quote
-                                    </Button>
-                                </form>
-                            </CardContent>
-                        </Card>
                     </motion.div>
                 </div>
             </div>
