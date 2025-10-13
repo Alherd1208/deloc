@@ -9,9 +9,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 const tokenomicsData = [
     {
         category: 'Seed',
-        totalSupply: '5,000,000,000',
+        totalSupply: '5,000,000',
         percent: '10.00%',
-        price: '$0.00040',
+        price: '$0.04000',
         valuation: '$2,000,000',
         collected: '$200,000',
         tgeUnlock: '20%',
@@ -20,9 +20,9 @@ const tokenomicsData = [
     },
     {
         category: 'Private',
-        totalSupply: '12,500,000,000',
+        totalSupply: '12,500,000',
         percent: '25.00%',
-        price: '$0.00032',
+        price: '$0.08000',
         valuation: '$4,000,000',
         collected: '$1,000,000',
         tgeUnlock: '20%',
@@ -31,10 +31,10 @@ const tokenomicsData = [
     },
     {
         category: 'Public',
-        totalSupply: '15,000,000,000',
-        percent: '30.00%',
-        price: '$0.00016',
-        valuation: '$2,400,000',
+        totalSupply: '500,000',
+        percent: '1.00%',
+        price: '$0.20000',
+        valuation: '$10,000,000',
         collected: '$100,000',
         tgeUnlock: '20%',
         cliff: '1 day',
@@ -42,10 +42,10 @@ const tokenomicsData = [
     },
     {
         category: 'Liquidity',
-        totalSupply: '3,500,000,000',
+        totalSupply: '3,500,000',
         percent: '7.00%',
-        price: '$0.00016',
-        valuation: '$560,000',
+        price: '$0.20000',
+        valuation: '$10,000,000',
         collected: '$0',
         tgeUnlock: '100%',
         cliff: '0 days',
@@ -53,10 +53,10 @@ const tokenomicsData = [
     },
     {
         category: 'Team & Advisors',
-        totalSupply: '4,000,000,000',
-        percent: '8.00%',
-        price: '$0.00016',
-        valuation: '$640,000',
+        totalSupply: '7,500,000',
+        percent: '15.00%',
+        price: '$0.20000',
+        valuation: '$10,000,000',
         collected: '$0',
         tgeUnlock: '5%',
         cliff: '30 days',
@@ -64,12 +64,12 @@ const tokenomicsData = [
     },
     {
         category: 'Foundation',
-        totalSupply: '10,000,000,000',
-        percent: '20.00%',
-        price: '$0.00016',
-        valuation: '$1,600,000',
+        totalSupply: '21,000,000',
+        percent: '42.00%',
+        price: '$0.20000',
+        valuation: '$10,000,000',
         collected: '$0',
-        tgeUnlock: '20%',
+        tgeUnlock: '5%',
         cliff: '182 days',
         vesting: '1095 days'
     }
@@ -79,13 +79,13 @@ const keyStats = [
     {
         icon: DollarSign,
         label: 'Public Sale Price',
-        value: '$0.00016',
+        value: '$0.20000',
         color: 'primary'
     },
     {
         icon: TrendingUp,
         label: 'Total Supply',
-        value: '50,000,000,000',
+        value: '50,000,000',
         color: 'secondary'
     },
     {
