@@ -27,7 +27,7 @@ const features = [
     {
         icon: Thermometer,
         title: 'Thermometer',
-        description: 'Built-in temperature monitoring for temperature-sensitive cargo.',
+        description: 'Built-in temperature monitoring for temperature-sensitive cargo. Operating range: -40°C to +60°C for battery and modem.',
         color: 'secondary'
     },
     {
@@ -69,7 +69,7 @@ const features = [
     {
         icon: Globe,
         title: 'Connectivity',
-        description: 'Satellite Internet + 2G, 4G connectivity for global coverage.',
+        description: 'Satellite Internet + Cat-NB, Cat-M connectivity for global coverage.',
         color: 'primary'
     }
 ]
