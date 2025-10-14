@@ -82,7 +82,7 @@ export default function CoFounders() {
                                             src={getImagePath(founder.image)}
                                             alt={founder.name}
                                             fill
-                                            className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
                                             style={{
                                                 objectPosition: 'center center',
                                                 filter: 'contrast(1.15) saturate(1.05) brightness(1.05)',
