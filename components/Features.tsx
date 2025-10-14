@@ -1,6 +1,6 @@
 'use client'
 
-import { Satellite, Shield, Search, Thermometer, Compass, Gauge, Coins, Gamepad2, ShoppingCart, Star, Globe } from 'lucide-react'
+import { Satellite, Shield, Search, Thermometer, Compass, Gauge, Coins, Gamepad2, ShoppingCart, Star, Globe, Droplets } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -41,6 +41,12 @@ const features = [
         title: 'Barometer',
         description: 'Atmospheric pressure monitoring for optimal cargo conditions.',
         color: 'secondary'
+    },
+    {
+        icon: Droplets,
+        title: 'Humidity Sensor',
+        description: 'Humidity monitoring for moisture-sensitive cargo and optimal storage conditions.',
+        color: 'primary'
     },
     {
         icon: Coins,
