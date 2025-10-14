@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'Delog - Decentralized Logistics Marketplace',
-    description: 'Anyone can order transportation of any product from anywhere to anywhere. Powered by crypto trackers, $DLOG coin, and blockchain verification.',
+    description: 'Specialized transportation services for cars, special transport, and premium food products. Powered by crypto trackers, $DLOG coin, and blockchain verification.',
     keywords: 'logistics marketplace, crypto trackers, DLOG coin, play to earn, blockchain, transportation',
     authors: [{ name: 'Delog Team' }],
 }

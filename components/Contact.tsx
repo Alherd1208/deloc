@@ -23,7 +23,7 @@ export default function Contact() {
                             Ready to Join the Logistics Marketplace?
                         </h2>
                         <p className="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
-                            Join the decentralized logistics marketplace where anyone can order transportation of any product from anywhere to anywhere.
+                            Join the decentralized logistics marketplace specializing in cars, special transport, and premium food products.
                             Powered by crypto trackers, $DLOG coin, and automatic carrier matching.
                         </p>
 

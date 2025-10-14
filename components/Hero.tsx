@@ -52,12 +52,12 @@ export default function Hero() {
                             <span className="text-white">Logistics Marketplace</span>
                             <br />
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-                                Transport Anything
+                                Transport Cars, Special&nbsp;Transport and Premium Food Products
                             </span>
                         </h1>
 
                         <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-                            Anyone can order transportation of any product from anywhere to anywhere.
+                            Specialized transportation services for cars, special transport needs, and premium food products.
                             Powered by crypto trackers with 100% blockchain trust, $DLOG coin, and automatic carrier matching.
                         </p>
 

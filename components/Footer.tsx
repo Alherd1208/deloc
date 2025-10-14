@@ -15,8 +15,8 @@ export default function Footer() {
                             <span className="text-2xl font-bold">Delog</span>
                         </div>
                         <p className="text-gray-400 mb-4">
-                            Decentralized logistics marketplace where anyone can order transportation
-                            of any product from anywhere to anywhere. Powered by $DLOG coin.
+                            Decentralized logistics marketplace specializing in cars, special transport,
+                            and premium food products. Powered by $DLOG coin.
                         </p>
                         <div className="space-y-2 text-sm text-gray-400">
                             <div className="flex items-center gap-2">
