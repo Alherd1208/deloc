@@ -122,7 +122,7 @@ export default function Tokenomics() {
                 </motion.div>
 
                 {/* Key Stats */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
                     {keyStats.map((stat, index) => {
                         const Icon = stat.icon
                         const colorClass = stat.color === 'primary' ? 'primary' : 'secondary'
@@ -239,7 +239,7 @@ export default function Tokenomics() {
                     <Card className="bg-gradient-to-r from-primary-50 to-secondary-50 border-primary-200">
                         <CardContent className="py-8">
                             <h3 className="text-2xl font-bold mb-4">Token Distribution Summary</h3>
-                            <div className="grid md:grid-cols-3 gap-6 text-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 text-center">
                                 <div>
                                     <p className="text-3xl font-bold text-primary-600">35%</p>
                                     <p className="text-gray-600">Early Investors</p>

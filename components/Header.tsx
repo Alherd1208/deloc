@@ -11,10 +11,10 @@ export default function Header() {
     return (
         <header className="bg-white shadow-sm sticky top-0 z-50">
             <div className="container-custom">
-                <div className="flex justify-between items-center py-4">
+                <div className="flex justify-between items-center py-3 sm:py-4">
                     <div className="flex items-center space-x-2">
-                        <Truck className="h-8 w-8 text-primary-600" />
-                        <span className="text-2xl font-bold text-gray-900">Delog</span>
+                        <Truck className="h-6 w-6 sm:h-8 sm:w-8 text-primary-600" />
+                        <span className="text-xl sm:text-2xl font-bold text-gray-900">Delog</span>
                     </div>
 
                     <nav className="hidden md:flex items-center space-x-8">
@@ -34,7 +34,7 @@ export default function Header() {
                                 <span className="sr-only">Toggle menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                        <SheetContent side="right" className="w-[280px] sm:w-[300px] md:w-[400px]">
                             <nav className="flex flex-col space-y-6 mt-6">
                                 <a
                                     href="#features"

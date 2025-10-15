@@ -65,7 +65,7 @@ export default function CoFounders() {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {founders.map((founder, index) => (
                         <motion.div
                             key={founder.name}
@@ -166,7 +166,7 @@ export default function CoFounders() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                     viewport={{ once: true }}
-                    className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
+                    className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
                 >
                     {[
                         { icon: Users, value: "3", label: "Co-Founders" },

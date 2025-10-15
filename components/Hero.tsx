@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
             <div className="relative container-custom section-padding">
-                <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh]">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
                             <span className="text-sm font-medium text-primary-100">Decentralized Logistics Marketplace</span>
                         </motion.div>
 
-                        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
                             <span className="text-white">Logistics Marketplace</span>
                             <br />
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
@@ -56,12 +56,12 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed max-w-2xl">
                             Specialized transportation services for cars, special transport needs, and premium food products.
                             Powered by crypto trackers with 100% blockchain trust, $DLOG coin, and automatic carrier matching.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mb-16">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-12 md:mb-16">
                             <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
@@ -87,7 +87,7 @@ export default function Hero() {
                             </motion.div>
                         </div>
 
-                        <div className="grid grid-cols-3 gap-8">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                             {[
                                 { icon: MapPin, label: 'A-GNSS Tracking', color: 'primary' },
                                 { icon: Shield, label: 'Blockchain Trust', color: 'secondary' },

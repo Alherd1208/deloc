@@ -92,11 +92,11 @@
   }
   
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-12 sm:py-16 md:py-24;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
   }
 
   /* Glass morphism effect */
@@ -137,6 +137,23 @@
 }
 
 @layer utilities {
+  /* Mobile-first responsive utilities */
+  .mobile-padding {
+    @apply px-3 sm:px-4 md:px-6;
+  }
+  
+  .mobile-text-sm {
+    @apply text-sm sm:text-base;
+  }
+  
+  .mobile-text-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .mobile-gap {
+    @apply gap-3 sm:gap-4 md:gap-6;
+  }
+
   /* Text gradient utilities */
   .text-gradient-primary {
     @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent;
